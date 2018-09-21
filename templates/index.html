@@ -11,7 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/css/mdb.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="dist/device-mockups.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/device-mockups.min.css">
   <title>ReviewLifter Design</title>
 </head>
 
@@ -36,32 +36,32 @@
     <div class="col-md-2"></div>
     <div class="col-md-3">
       <div class="card">
-        <div class="card-body mx-4 mt-4">
+        <form action="{{ url_for('index') }}" method="post" class="card-body mx-4 mt-4">
           <!--Body-->
           <div class="md-form">
-            <input type="text" id="Form-email4" class="form-control">
-            <label for="Form-email4">First Name</label>
+            <input type="text" name="FirstName" class="form-control">
+            <label>First Name</label>
           </div>
           <div class="md-form">
-            <input type="text" id="Form-pass4" class="form-control">
-            <label for="Form-pass4">Last Name</label>
+            <input type="text" name="LastName" class="form-control">
+            <label>Last Name</label>
           </div>
           <div class="md-form">
-            <input type="text" id="Form-pass4" class="form-control">
-            <label for="Form-pass4">Email</label>
+            <input type="text" name="Email" class="form-control">
+            <label>Email</label>
           </div>
           <div class="md-form">
-            <input type="text" id="Form-pass4" class="form-control">
-            <label for="Form-pass4">Phone</label>
+            <input type="text" name="Phone" class="form-control">
+            <label>Phone</label>
           </div>
           <div class="md-form pb-3">
-            <input type="text" id="Form-pass4" class="form-control">
-            <label for="Form-pass4">Company</label>
+            <input type="text" name="Company" class="form-control">
+            <label>Company</label>
           </div>
           <div class="text-center mb-4">
-            <button type="button" class="btn btn-danger btn-block z-depth-2 waves-effect waves-light">Watch Demo</button>
+            <input value='Watch Demo' type="submit" class="btn btn-danger btn-block z-depth-2 waves-effect waves-light">
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <br>
